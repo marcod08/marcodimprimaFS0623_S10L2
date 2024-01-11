@@ -6,7 +6,7 @@ const SingleBook = ({ book, changeAsin, selectedAsin }) => {
 
   return (
     <>
-      <Card
+      <Card data-testid='card'
         onClick={() => {
           setSelected(!selected);
           changeAsin(book.asin);

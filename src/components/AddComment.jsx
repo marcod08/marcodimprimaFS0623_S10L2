@@ -40,7 +40,7 @@ const AddComment = ({ bookId, aggiornaCommenti }) => {
   return (
     <Form onSubmit={sendNewReview}>
       <Form.Group className="mb-1 mt-4">
-        <Form.Label>Commento</Form.Label>
+        <Form.Label data-testid='comment-input' >Commento</Form.Label>
         <Form.Control
           type="text"
           value={commentObject.comment}
